@@ -1,0 +1,428 @@
+
+<!-- NAV BAR -->
+
+<template name="nav">
+
+<!-- nav tabs med large -->
+<strong class="hide-for-small">
+  
+  <div class="navigate contain-to-grid sticky">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="navfont toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#aboutus">About Us</a></li>
+          <li class="divider"></li>
+          <li><a href="#managementservices">Management Services</a></li>
+          <li class="divider"></li>
+          <li><a href="#availablerentals">Available Rentals</a></li>
+          <li class="divider"></li>
+          <li><a href="#contactus">Contact</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#">Login</a>
+              <ul class="dropdown">
+            <li><a href="#" data-reveal-id="firstModal">Owner Login</a></li>
+             <div id="firstModal" class="reveal-modal" data-reveal>
+            <iframe src="https://bram.managebuilding.com/manager" width="90%" height="100%"></iframe>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+           
+            <li><a href="#" data-reveal-id="secondModal">Tenant Login</a></li>
+             <div id="secondModal" class="reveal-modal" data-reveal>
+            <iframe src="https://bram.managebuilding.com/Resident/PublicPages/login.aspx" width="90%" height="100%"></iframe>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+        </ul>
+      </li>
+        </ul>
+      </section>
+      </nav>
+    </div>
+</strong>
+
+<!-- nav tabs small -->
+<strong class="hide-for-medium-up">
+
+  <div class="navigate contain-to-grid sticky">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name"><h1><a href="tel:+8883404088">Give us a call today! 888-340-4088</a></h1></li>
+        <li class="navfont toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+       <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#aboutus">About Us</a></li>
+          <li class="divider"></li>
+          <li><a href="#managementservices">Management Services</a></li>
+          <li class="divider"></li>
+          <li><a href="#availablerentals">Available Rentals</a></li>
+          <li class="divider"></li>
+          <li><a href="#contactus">Contact</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Owner Login</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Tenant Login</a></li>
+        </ul>
+      </section>
+</nav>
+</div>
+</strong>    
+</template>
+
+
+<!-- LOGO HEADER -->
+
+<template name="logo">
+<div class="welcome" style="background-image: url(img/brightleaf.png)">
+  <div class="logo row">
+<!-- small size logo -->    
+    <strong class="hide-for-medium-up">
+      <div class="large-12 column">
+          <a href="index.html"><img class="smalllogo" src="img/newlogo.png"></a>
+      </div>
+    </strong>
+<!-- medium and large size logo --> 
+    <strong class="hide-for-small">
+      <div class="large-12 column">
+        <a href="index.html"><img class="biglogo" src="img/newlogo.png"></a>
+      </div>
+    </strong>
+</div>
+
+  <p><h3 class="mission">Delivering the best quality of service to our clients,<br>residents, and team members, so that each property<br> 
+  may reach its highest economic potential.</h3></p>
+  <br>
+</div>
+</template>
+
+
+<!-- HOUSE HIGHLIGHTS -->
+
+<template name="highlight">
+  <ul class="highlight small-block-grid-3">
+    <li><a href="#"><img class="housepic" src="img/house.jpg"></a></li>
+    <li><a href="#"><img class="housepic" src="img/house2.JPG"></a></li>
+    <li><a href="#"><img class="housepic" src="img/house3.png"></a></li>  
+  </ul>
+</template>
+
+
+<!-- ABOUT -->
+
+<template name="about" class="about">
+  <a id="aboutus"></a>
+  <div class="about large-12 column">
+    <p class="abouttitle">About Us</p>
+    <p><h6>Allied Management Group is a new breed of property management company in the Triangle. We provide a wholly integrated package that yields personalized solutions for each of our clients’ diverse property management needs. Client goals, market conditions, and property needs are our driving forces. Allied Management’s superior service relies on our robust marketing, responsive oversight, and streamlined technology.</h6></p>
+
+    <p><h6>Allied Management Group takes care of it all! Our unique approach equips property owners and residents with an extensive team of local experts.  Our clients experience fewer vacancies, more long-term tenants, and a peace of mind that can’t be matched.</h6></p>
+    <br>
+<!-- main buttons -->       
+    <div class="row">
+      <div class="large-6 column">
+        <a href="#managementservices" class="mainbutton button expand">Management Services</a>
+      </div>
+      <div class="large-6 column">
+        <a href="#availablerentals" class="mainbutton button expand">Available Rentals</a>
+      </div>
+    </div>
+   </div> 
+  <hr>
+</template>
+
+
+<!-- TEAM -->
+
+<template name="team">
+  <div class="teamlist large-5 column">
+    <p><h5>The Allied Management Team includes:</h5></p>
+    <p>• A North Carolina Licensed Broker<br>• A North Carolina Licensed Residential Appraiser<br>• A North Carolina Licensed General Contractor<br>• An attorney<br>• A Certified Public Accountant<br>• A mortgage professional<br></p>
+  </div>
+<!-- side photo -->  
+  <div class="large-7 column" style="background-image: url(img/durham.png)">
+  </div>
+</template>
+
+
+<!-- MGMT SERVICES -->
+
+<template name="managementservices">
+  
+    <div class="row">
+      <div class="large-12 column ">
+
+      </div>
+    </div>
+  <div id="managementservices" class="row mgmtbackground" style="background-image: url(img/brightleaf.png)">
+    <div class=" large-12 column">
+      <p class="mgmttitle">Management Services</p>
+      <p class="mgmtcontent">Allied Management Group is a new-breed of property management companies. We provide a wholly integrated package that yields personalized solutions for each of our clients’ diverse property management needs. Client goals, market conditions, and property needs are our driving forces. Allied Management’s superior service relies on our robust marketing, responsive oversight, and streamlined technology.
+      <br>
+      <br>
+      We take care of it all! Our clients experience fewer vacancies, more long-term tenants, and a peace of mind that can’t be matched. Take an in-depth look at our tried and true best practices:</p>
+    </div>
+<!-- accordion -->
+    <div class="mgmtaccordion large-12 column">
+      <dl class="accordion accordtext" data-accordion>
+        <dd>
+          <!-- PROPERTY EVALUATION -->
+          <a href="#panel1">PROPERTY EVALUATION</a>
+          <div id="panel1" class="content">
+            • On-site visit to determine best rental rate<br>• Thorough property condition assessment<br>• Professional improvement suggestions to maximize residence<br>• Photo documentation for marketing and records<br>
+          </div>
+        </dd>
+        <dd>
+        <!-- MARKETING -->
+         <a href="#panel2">MARKETING</a>
+          <div id="panel2" class="content">
+            We market your property for you. We know that tenants do most of their searching online. For this reason, we have the most thorough online marketing plan in the area. We also have national and local contacts that serve as indispensible references in directing business our way.
+           <br>
+            <br>
+            <!-- online resources -->
+            ONLINE RESOURCES<br>• Craigslist<br>• DurhamRent.com<br>• Trulia<br>• Zillow<br>• and over 20 more
+            <br>
+            <br>
+            <!-- local/offline resources -->
+            LOCAL AND OFFLINE RESOURCES<br>• University housing offices<br>• Relocation companies<br>• Major corporations<br>
+          </div>
+        </dd>
+        <dd>
+          <!-- TENANT PROCUREMENT -->
+          <a href="#panel3">TENANT PROCUREMENT</a>
+          <div id="panel3" class="content">
+           Through years of experience, we have developed a process for attracting, screening, and confidently choosing ideal tenants for our clients. We implement the following:
+            <br>
+            <br>
+            <!-- screening -->
+            SCREENING<br>• Detailed rental application forms<br>• Full credit screen<br>• Thorough employer and former landlord reference checks<br>• In-depth interviews
+            <br>
+            <br>
+            <!-- signing on a new tenant -->
+            SIGNING ON A NEW TENANT<br>• Personal property showing.  We are there to answer questions and close the deal<br>• Comprehensive leases jointly developed and approved by the NC Bar Association and the North Carolina Association of Realtors<br>• Security deposit and legal notice forms<br>• We ensure compliance with all NC Laws<br>
+          </div>
+        </dd>
+       <dd>
+          <!-- FINANCIAL OVERSIGHT -->
+          <a href="#panel4">FINANCIAL OVERSIGHT</a>
+          <div id="panel4" class="content">
+           From monthly rent collection, to completing tax records- we take care of all of the money management and accounting that renting your property requires.
+            <br>
+            <br>
+            <!-- rent collection services -->
+           RENT COLLECTION SERVICES<br>• Online and automatic bill pay for your tenants<br>• Fair but firm rent collection policies<br>• Quick action should delinquencies occur<br>• Buffer of protection for you when firmness is required<br>• Mailing and direct deposit options for sending net proceeds to your bank account
+            <br>
+            <br>
+            <!-- security deposit handling -->
+            COMPLETE SECURITY DEPOSIT HANDLING<br>• Maximum security deposits collected for your protection<br>• Deposits held in our broker trust account, subject to State supervision<br>• Forfeits and damage claims in conformance with State Security Deposit Laws
+            <br>
+            <br>
+            <!-- accounting services -->
+            COMPREHENSIVE ACCOUNTING SERVICES<br>• Online reports available to you 24/7. You can trace income, expenses, tenant maintenance requests and more<br>• Electronic accounting and record keeping provides accuracy and efficiency<br>• Complete tax records each year <br>• All accompanying files, records and receipts for IRS compliance<br>• Monthly and yearly income and expense statements<br>• Itemized records of all transactions<br>• Bill payment pertaining to the property<br>
+          </div>
+        </dd>
+        <dd>
+          <!-- MAINTENANCE AND REPAIRS -->
+          <a href="#panel5">MAINTENANCE AND REPAIRS</a>
+          <div id="panel5" class="content">
+            We get to know your property through inspections and monitor its progress regularly. Whenever the need for maintenance and repairs may arise, we have the experience and network of contractors to affordably and effectively resolve any issue. Our goal is to provide the best residence for all tenants.
+            <br>
+            <br>
+            • We conduct the initial inspection and tenant check-in<br>• Spot checks and periodic inspections are done regularly<br>• Termination inspection and tenant check-out <br>• We handle maintenance and repair calls at all hours<br>• Our maintenance department is managed by a NC Licensed General Contractor<br>• Because of our volume, we negotiate the best prices for you with carefully chosen contractors<br>• We know houses, the problems that occur, what repair costs are, and how to get good service
+          </div>
+        </dd>
+        <dd>
+          <!-- ADDITIONAL SERVICES -->
+          <a href="#panel6">ADDITIONAL SERVICES</a>
+          <div id="panel6" class="content">
+           • Investment consulting<br>• Purchase and sale evaluation by our Licensed Residential Appraiser<br>• Should you wish to sell, our Licensed Broker will help you personally<br>• We can also refer clients to a competent REALTOR® with experience in your neighborhood<br>• We additionally offer buyer agency representation
+          </div>
+        </dd>
+      </dl>
+     <br>
+  </div>
+</div>
+</template>
+
+
+<!-- AVAILABLE RENTALS -->
+
+<template name="availablerentals">
+  <a id="availablerentals"></a>
+  <strong class="hide-for-small">
+    <div class="large-12 column availrent">
+      <p class="availrenttitle">Available Rentals</p>
+      <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApartmentSearchFrame.aspx" width="100%" height="80%"></iframe>
+      </div>
+    </strong>
+
+    <strong class="hide-for-medium-up">
+      <div class="large-12 column availrentsmall">
+      <p class="availrenttitle">
+        <a href="http://bram.managebuilding.com/Resident/PublicPages/ApartmentSearchFrame.aspx">Available Rentals</a></p>
+    </div>
+    </strong>
+  
+
+</template>
+
+
+<!-- OWNERS AND TENANTS -->
+
+<template name="ownersandtenants">
+  <!-- OWNER -->
+  <a id="ownersandtenants"></a>
+  <div class="row ownerbackground">
+  <div class="large-6 column">
+    <!-- prospective owner -->
+    <p class="ownertitle"><br>I'm an owner.</p>
+    <p class="ownertext">You don’t have to manage your property all on your own.<br>You don’t have to compromise with a service that is subpar.
+    <br>
+    <br>
+    Allied Management Group makes owning property a trouble free investment. Whether you are a longtime rental property owner or you are thinking about renting your property for the first time- we are here to serve you well. Let us help you start enjoying your rental property!</p>
+    <br>
+  </div>
+    <div class="large-6 column inline center-button">
+      <a href="#managementservices" class="mainbutton button expand">Management Services</a>
+      <a href="available.html" class="mainbutton button expand">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- TENANT -->
+  <strong class="hide-for-small">
+  <div class="row ownerbackground">
+    <div class="large-6 column inline center-button">
+      <a href="available.html" class="mainbutton button expand">Available Rentals</a>
+  
+    <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
+    </div>
+
+  <div class="large-6 column">
+    <!-- prospective tenant -->
+    <p class="ownertitle"><br>I want to rent.</p>
+    <p class="ownertext">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
+    <br>
+    <br>
+    Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
+    <br>
+    <br>
+  </div>  
+  </div> 
+  <div id="myModal" class="reveal-modal" data-reveal>
+    <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
+    <a class="close-reveal-modal">&#215;</a>
+  </div> 
+  </strong>
+
+  <strong class="hide-for-medium-up">
+<div class="row ownerbackground">
+  <div class="large-6 column">
+    <!-- prospective tenant -->
+    <p class="ownertitle"><br>I want to rent.</p>
+    <p class="#">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
+    <br>
+    <br>
+    Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
+
+  </div> 
+
+  <div class="large-6 column inline center-button">
+      <a href="available.html" class="mainbutton button expand">Available Rentals</a>
+
+    <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
+  </div>
+  </div>
+  <div id="myModal" class="reveal-modal modal" data-reveal>
+  <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
+  <a class="close-reveal-modal">&#215;</a>
+  </div> 
+
+</strong>
+</template>
+
+
+<!-- CONTACT -->
+
+<template name="contact">
+  <a id="contactus"></a>
+  <img class="map" src="">
+  <div class="large-12 column">
+    <p class="contacttitle">Contact Us</p>
+   <!-- Contact Details -->
+    <div class="large-8 columns">
+      <section class="contact section">
+        <div class="contact content" data-slug="panel1">
+          <form action="MAILTO:info@amgofnc.com" method="post" enctype="text/plain">
+            <div class="row collapse">
+              <!-- name -->
+              
+              <div class="large-12 columns">
+                <input type="text" id="yourName" placeholder="Jane Smith">
+            </div>
+            <div class="row collapse">
+              <!-- email -->
+              <div class="large-12 columns">
+                <input type="text" id="yourEmail" placeholder="jsmith@gmail.com">
+              </div>
+
+            </div>
+            <!-- message -->
+            <textarea rows="8"></textarea>
+            <br>
+            <button type="submit" class="mainbutton radius button">Submit</button>
+            </div>
+          </form>
+        </div>
+
+      </section> 
+    </div>
+    <!-- Sidebar -->
+    <div class="large-4 columns">
+      <span class="addresstitle">Allied Management Group, LLC</span>
+      <span class="address"><br>1738 Hillandale Road <br> Durham, NC <br>27705</span><br><br>
+      <a href="https://www.google.com/maps/dir//Allied+Management+Group,+LLC,+1738+Hillandale+Rd,+Durham,+NC+27705/@36.027652,-78.9353919,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89ace15c14a5d51f:0xbaddc556f05e6709!2m2!1d-78.935841!2d36.027414" target="_blank">VIEW MAP</a>
+      <br>
+      <br>
+      <br>
+      <br>
+       <span class="address">Phone: 888-340-4088
+        <br>Fax: 919-287-2228
+        <br>Email: <a href="mailto:info@amgofnc.com">info@amgofnc.com</a>
+      </span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/amgofnc" target="_blank"><img class="fb" src="img/facebook.png"></a> &nbsp;&nbsp;
+      <a href="http://www.linkedin.com/company/allied-management-group-llc" target="_blank"><img class="fb" src="img/linkedin.png"></a>
+       &nbsp;&nbsp;
+      <a href="https://plus.google.com/u/1/b/114093298738418246467/114093298738418246467/about" target="_blank"><img class="fb" src="img/google.png"></a>
+       &nbsp;&nbsp;
+      <a href="http://www.yelp.com/biz/allied-management-group-durham" target="_blank"><img class="fb" src="img/yelp.png"></a>
+    </div>
+  </div>
+</template>
+
+
+<!-- FOOTER -->
+
+<template name="footer">
+  <footer>
+    <div class="large-12 columns"><hr>
+      <div class="row">
+        <div class="large-4 columns">
+          <p>© 2014 Allied Management Group, LLC</p>
+        </div>
+        <div class="large-8 columns">
+          <ul class="inline-list right">
+            <li><a href="tel:+8883404088">888-340-4088</a></li>
+            <li><a href="mailto:info@amgofnc.com">info@amgofnc.com</a></li>
+            <li><a href="https://www.google.com/maps/dir//1738+Hillandale+Rd,+Durham,+NC+27705/@36.027652,-78.9353919,17z/data=!4m13!1m4!3m3!1s0x89ace15c162e6917:0x1b9b209b04c32fa!2s1738+Hillandale+Rd!3b1!4m7!1m0!1m5!1m1!1s0x89ace15c162e6917:0x1b9b209b04c32fa!2m2!1d-78.9353919!2d36.027652" target="_blank">1738 Hillandale Road, Durham, NC 27705</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
