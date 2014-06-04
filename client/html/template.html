@@ -4,49 +4,54 @@
 <template name="nav">
 
 <!-- nav tabs med large -->
-<strong class="hide-for-small">
+<strong class="hide-for-small"> 
   
-  <div class="navigate contain-to-grid sticky">
+  <div class="my-nav" data-magellan-expedition="fixed" data-options="destination_threshold:200">
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
-        <li class="navfont toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        <li class="name">
+        <h1><a href="#"></a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="#aboutus">About Us</a></li>
+          <li data-magellan-arrival="about"><a href="#aboutus">About Us</a></li>
           <li class="divider"></li>
-          <li><a href="#managementservices">Management Services</a></li>
+          <li data-magellan-arrival="management"><a href="#managementservices">Management Services</a></li>
           <li class="divider"></li>
-          <li><a href="#availablerentals">Available Rentals</a></li>
+          <li data-magellan-arrival="rentals"><a href="#availablerentals">Available Rentals</a></li>
           <li class="divider"></li>
-          <li><a href="#contactus">Contact</a></li>
+          <li data-magellan-arrival="contact"><a href="#contactus">Contact</a></li>
           <li class="divider"></li>
           <li class="has-dropdown">
             <a href="#">Login</a>
               <ul class="dropdown">
-            <li><a href="#" data-reveal-id="firstModal">Owner Login</a></li>
-             <div id="firstModal" class="reveal-modal" data-reveal>
-            <iframe src="https://bram.managebuilding.com/manager" width="90%" height="100%"></iframe>
-            <a class="close-reveal-modal">&#215;</a>
-            </div>
-           
-            <li><a href="#" data-reveal-id="secondModal">Tenant Login</a></li>
-             <div id="secondModal" class="reveal-modal" data-reveal>
-            <iframe src="https://bram.managebuilding.com/Resident/PublicPages/login.aspx" width="90%" height="100%"></iframe>
-            <a class="close-reveal-modal">&#215;</a>
-            </div>
-        </ul>
-      </li>
+                <li><a href="#" data-reveal-id="firstModal">Owner Login</a></li>
+                <li><a href="#" data-reveal-id="secondModal">Tenant Login</a></li> 
+              </ul>
+          </li> 
         </ul>
       </section>
-      </nav>
-    </div>
-</strong>
+    </nav>
+  </div>
 
-<!-- nav tabs small -->
+  <div id="firstModal" class="reveal-modal" data-reveal>
+      <iframe src="https://bram.managebuilding.com/manager" width="90%" height="100%"></iframe>
+        <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="secondModal" class="reveal-modal" data-reveal>
+      <iframe src="https://bram.managebuilding.com/Resident/PublicPages/login.aspx" width="90%" height="100%"></iframe>
+        <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+</strong> 
+
+
 <strong class="hide-for-medium-up">
 
-  <div class="navigate contain-to-grid sticky">
+  <div class="my-nav" data-magellan-expedition="fixed">
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name"><h1><a href="tel:+8883404088">Give us a call today! 888-340-4088</a></h1></li>
@@ -54,13 +59,13 @@
       </ul>
        <section class="top-bar-section">
         <ul class="right">
-          <li><a href="#aboutus">About Us</a></li>
+          <li data-magellan-arrival="about"><a href="#aboutus">About Us</a></li>
           <li class="divider"></li>
-          <li><a href="#managementservices">Management Services</a></li>
+          <li data-magellan-arrival="management"><a href="#managementservices">Management Services</a></li>
           <li class="divider"></li>
-          <li><a href="#availablerentals">Available Rentals</a></li>
+          <li data-magellan-arrival="rentals"><a href="#availablerentals">Available Rentals</a></li>
           <li class="divider"></li>
-          <li><a href="#contactus">Contact</a></li>
+          <li data-magellan-arrival="contact"><a href="#contactus">Contact</a></li>
           <li class="divider"></li>
           <li><a href="#">Owner Login</a></li>
           <li class="divider"></li>
@@ -69,29 +74,28 @@
       </section>
 </nav>
 </div>
-</strong>    
+</strong>   
 </template>
 
 
 <!-- LOGO HEADER -->
 
 <template name="logo">
-<div class="welcome" style="background-image: url(img/brightleaf.png)">
+<div class="welcome row full-width" style="background-image: url(img/brightleaf.png)">
   <div class="logo row">
 <!-- small size logo -->    
     <strong class="hide-for-medium-up">
       <div class="large-12 column">
-          <a href="index.html"><img class="smalllogo" src="img/newlogo.png"></a>
+          <a href="#"><img class="smalllogo" src="img/newlogo.png"></a>
       </div>
     </strong>
 <!-- medium and large size logo --> 
     <strong class="hide-for-small">
       <div class="large-12 column">
-        <a href="index.html"><img class="biglogo" src="img/newlogo.png"></a>
+        <a href="#"><img class="biglogo" src="img/newlogo.png"></a>
       </div>
     </strong>
-</div>
-
+  </div>
   <p><h3 class="mission">Delivering the best quality of service to our clients,<br>residents, and team members, so that each property<br> 
   may reach its highest economic potential.</h3></p>
   <br>
@@ -102,18 +106,22 @@
 <!-- HOUSE HIGHLIGHTS -->
 
 <template name="highlight">
-  <ul class="highlight small-block-grid-3">
-    <li><a href="#"><img class="housepic" src="img/house.jpg"></a></li>
-    <li><a href="#"><img class="housepic" src="img/house2.JPG"></a></li>
-    <li><a href="#"><img class="housepic" src="img/house3.png"></a></li>  
-  </ul>
+  <div class="row full-width">
+  <div class="medium-12 columns">
+    <ul class="highlight small-block-grid-3">
+      <li><a href="#"><img class="housepic" src="img/house.jpg"></a></li>
+      <li><a href="#"><img class="housepic" src="img/house2.JPG"></a></li>
+      <li><a href="#"><img class="housepic" src="img/house3.png"></a></li>  
+    </ul>
+  </div>
+  </div>
 </template>
 
 
 <!-- ABOUT -->
 
-<template name="about" class="about">
-  <a id="aboutus"></a>
+<template name="about">
+  <div data-magellan-destination="about" id="aboutus" class="row full-width">
   <div class="about large-12 column">
     <p class="abouttitle">About Us</p>
     <p><h6>Allied Management Group is a new breed of property management company in the Triangle. We provide a wholly integrated package that yields personalized solutions for each of our clients’ diverse property management needs. Client goals, market conditions, and property needs are our driving forces. Allied Management’s superior service relies on our robust marketing, responsive oversight, and streamlined technology.</h6></p>
@@ -129,20 +137,21 @@
         <a href="#availablerentals" class="mainbutton button expand">Available Rentals</a>
       </div>
     </div>
-   </div> 
-  <hr>
+   </div>
+  </div> 
 </template>
 
 
 <!-- TEAM -->
 
 <template name="team">
-  <div class="teamlist large-5 column">
+  <div class="row full-width">
+  <div class="teamlist medium-5 column">
     <p><h5>The Allied Management Team includes:</h5></p>
     <p>• A North Carolina Licensed Broker<br>• A North Carolina Licensed Residential Appraiser<br>• A North Carolina Licensed General Contractor<br>• An attorney<br>• A Certified Public Accountant<br>• A mortgage professional<br></p>
   </div>
-<!-- side photo -->  
-  <div class="large-7 column" style="background-image: url(img/durham.png)">
+  <!-- side photo -->  
+  <div class="medium-7 column" id="side-photo"> </div>
   </div>
 </template>
 
@@ -150,22 +159,16 @@
 <!-- MGMT SERVICES -->
 
 <template name="managementservices">
-  
-    <div class="row">
-      <div class="large-12 column ">
-
-      </div>
-    </div>
-  <div id="managementservices" class="row mgmtbackground" style="background-image: url(img/brightleaf.png)">
+  <div data-magellan-destination="management" id="managementservices" class="row mgmtbackground" style="background-image: url(img/brightleaf.png)">
     <div class=" large-12 column">
       <p class="mgmttitle">Management Services</p>
       <p class="mgmtcontent">Allied Management Group is a new-breed of property management companies. We provide a wholly integrated package that yields personalized solutions for each of our clients’ diverse property management needs. Client goals, market conditions, and property needs are our driving forces. Allied Management’s superior service relies on our robust marketing, responsive oversight, and streamlined technology.
       <br>
       <br>
       We take care of it all! Our clients experience fewer vacancies, more long-term tenants, and a peace of mind that can’t be matched. Take an in-depth look at our tried and true best practices:</p>
-    </div>
+    
 <!-- accordion -->
-    <div class="mgmtaccordion large-12 column">
+    <div class="mgmtaccordion">
       <dl class="accordion accordtext" data-accordion>
         <dd>
           <!-- PROPERTY EVALUATION -->
@@ -239,9 +242,10 @@
           <div id="panel6" class="content">
            • Investment consulting<br>• Purchase and sale evaluation by our Licensed Residential Appraiser<br>• Should you wish to sell, our Licensed Broker will help you personally<br>• We can also refer clients to a competent REALTOR® with experience in your neighborhood<br>• We additionally offer buyer agency representation
           </div>
-        </dd>
-      </dl>
-     <br>
+          </dd>
+        </dl>
+       <br>
+     </div>
   </div>
 </div>
 </template>
@@ -250,7 +254,7 @@
 <!-- AVAILABLE RENTALS -->
 
 <template name="availablerentals">
-  <a id="availablerentals"></a>
+  <div class="row full-width" data-magellan-destination="rentals" id="availablerentals">
   <strong class="hide-for-small">
     <div class="large-12 column availrent">
       <p class="availrenttitle">Available Rentals</p>
@@ -264,8 +268,7 @@
         <a href="http://bram.managebuilding.com/Resident/PublicPages/ApartmentSearchFrame.aspx">Available Rentals</a></p>
     </div>
     </strong>
-  
-
+  </div>
 </template>
 
 
@@ -273,17 +276,16 @@
 
 <template name="ownersandtenants">
   <!-- OWNER -->
-  <a id="ownersandtenants"></a>
-  <div class="row ownerbackground">
-  <div class="large-6 column">
-    <!-- prospective owner -->
-    <p class="ownertitle"><br>I'm an owner.</p>
-    <p class="ownertext">You don’t have to manage your property all on your own.<br>You don’t have to compromise with a service that is subpar.
-    <br>
-    <br>
-    Allied Management Group makes owning property a trouble free investment. Whether you are a longtime rental property owner or you are thinking about renting your property for the first time- we are here to serve you well. Let us help you start enjoying your rental property!</p>
-    <br>
-  </div>
+  <div class="row ownerbackground" id="ownersandtenants">
+    <div class="large-6 column">
+      <!-- prospective owner -->
+      <p class="ownertitle"><br>I'm an owner.</p>
+      <p class="ownertext">You don’t have to manage your property all on your own.<br>You don’t have to compromise with a service that is subpar.
+      <br>
+      <br>
+      Allied Management Group makes owning property a trouble free investment. Whether you are a longtime rental property owner or you are thinking about renting your property for the first time- we are here to serve you well. Let us help you start enjoying your rental property!</p>
+      <br>
+    </div>
     <div class="large-6 column inline center-button">
       <a href="#managementservices" class="mainbutton button expand">Management Services</a>
       <a href="available.html" class="mainbutton button expand">Contact Us</a>
@@ -292,116 +294,113 @@
 
   <!-- TENANT -->
   <strong class="hide-for-small">
-  <div class="row ownerbackground">
-    <div class="large-6 column inline center-button">
-      <a href="available.html" class="mainbutton button expand">Available Rentals</a>
-  
-    <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
-    </div>
+    <div class="row ownerbackground">
+      <div class="large-6 column inline center-button">
+        <a href="available.html" class="mainbutton button expand">Available Rentals</a>
+    
+      <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
+      </div>
 
-  <div class="large-6 column">
-    <!-- prospective tenant -->
-    <p class="ownertitle"><br>I want to rent.</p>
-    <p class="ownertext">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
-    <br>
-    <br>
-    Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
-    <br>
-    <br>
-  </div>  
-  </div> 
-  <div id="myModal" class="reveal-modal" data-reveal>
-    <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
-    <a class="close-reveal-modal">&#215;</a>
-  </div> 
+      <div class="large-6 column">
+        <!-- prospective tenant -->
+        <p class="ownertitle"><br>I want to rent.</p>
+        <p class="ownertext">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
+        <br>
+        <br>
+        Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
+        <br>
+        <br>
+      </div>  
+    </div> 
+
+    <div id="myModal" class="reveal-modal" data-reveal>
+       <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
+      <a class="close-reveal-modal">&#215;</a>
+    </div> 
   </strong>
 
   <strong class="hide-for-medium-up">
-<div class="row ownerbackground">
-  <div class="large-6 column">
-    <!-- prospective tenant -->
-    <p class="ownertitle"><br>I want to rent.</p>
-    <p class="#">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
-    <br>
-    <br>
-    Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
+    <div class="row ownerbackground">
+      <div class="large-6 column">
+        <!-- prospective tenant -->
+        <p class="ownertitle"><br>I want to rent.</p>
+        <p class="#">Interested in living in one of our properties? Take a look at our available rental listings and apply online today!
+        <br>
+        <br>
+        Don’t see what you’re looking for? Keep checking back- new rentals are posted as soon as they become available.</p>
+      </div> 
 
-  </div> 
-
-  <div class="large-6 column inline center-button">
-      <a href="available.html" class="mainbutton button expand">Available Rentals</a>
-
-    <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
-  </div>
-  </div>
-  <div id="myModal" class="reveal-modal modal" data-reveal>
-  <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
-  <a class="close-reveal-modal">&#215;</a>
-  </div> 
-
-</strong>
+      <div class="large-6 column inline center-button">
+          <a href="available.html" class="mainbutton button expand">Available Rentals</a>
+          <a href="myModal" data-reveal-id="myModal" class="mainbutton button expand">Apply Online</a>
+      </div>
+    </div>
+    
+    <div id="myModal" class="reveal-modal modal" data-reveal>
+       <iframe src="http://bram.managebuilding.com/Resident/PublicPages/ApplicationFrame.aspx" width="98%" height="100%"></iframe>
+      <a class="close-reveal-modal">&#215;</a>
+    </div> 
+  </strong>
 </template>
 
 
 <!-- CONTACT -->
 
 <template name="contact">
-  <a id="contactus"></a>
-  <img class="map" src="">
-  <div class="large-12 column">
-    <p class="contacttitle">Contact Us</p>
-   <!-- Contact Details -->
-    <div class="large-8 columns">
-      <section class="contact section">
-        <div class="contact content" data-slug="panel1">
-          <form action="MAILTO:info@amgofnc.com" method="post" enctype="text/plain">
-            <div class="row collapse">
-              <!-- name -->
-              
-              <div class="large-12 columns">
-                <input type="text" id="yourName" placeholder="Jane Smith">
-            </div>
-            <div class="row collapse">
-              <!-- email -->
-              <div class="large-12 columns">
-                <input type="text" id="yourEmail" placeholder="jsmith@gmail.com">
+  <div class="row full-width" data-magellan-destination="contact" id="contactus">
+    <img class="map" src="">
+    <div class="large-12 column">
+      <p class="contacttitle">Contact Us</p>
+     <!-- Contact Details -->
+      <div class="large-8 columns">
+        <section class="contact section">
+          <div class="contact content" data-slug="panel1">
+            <form action="MAILTO:info@amgofnc.com" method="post" enctype="text/plain">
+              <div class="row collapse">
+                <!-- name -->
+                <div class="large-12 columns">
+                  <input type="text" id="yourName" placeholder="Jane Smith">
+                </div>
+              <div class="row collapse">
+                <!-- email -->
+                <div class="large-12 columns">
+                  <input type="text" id="yourEmail" placeholder="jsmith@gmail.com">
+                </div>
               </div>
-
-            </div>
-            <!-- message -->
-            <textarea rows="8"></textarea>
-            <br>
-            <button type="submit" class="mainbutton radius button">Submit</button>
-            </div>
-          </form>
-        </div>
-
+              <!-- message -->
+              <textarea rows="8"></textarea>
+              <br>
+              <button type="submit" class="mainbutton radius button">Submit</button>
+              </div>
+            </form>
+          </div>
       </section> 
     </div>
     <!-- Sidebar -->
     <div class="large-4 columns">
-      <span class="addresstitle">Allied Management Group, LLC</span>
-      <span class="address"><br>1738 Hillandale Road <br> Durham, NC <br>27705</span><br><br>
-      <a href="https://www.google.com/maps/dir//Allied+Management+Group,+LLC,+1738+Hillandale+Rd,+Durham,+NC+27705/@36.027652,-78.9353919,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89ace15c14a5d51f:0xbaddc556f05e6709!2m2!1d-78.935841!2d36.027414" target="_blank">VIEW MAP</a>
-      <br>
-      <br>
-      <br>
-      <br>
-       <span class="address">Phone: 888-340-4088
-        <br>Fax: 919-287-2228
-        <br>Email: <a href="mailto:info@amgofnc.com">info@amgofnc.com</a>
-      </span>
-      <br>
-      <br>
-      <br>
-      <br>
-      <a href="https://www.facebook.com/amgofnc" target="_blank"><img class="fb" src="img/facebook.png"></a> &nbsp;&nbsp;
-      <a href="http://www.linkedin.com/company/allied-management-group-llc" target="_blank"><img class="fb" src="img/linkedin.png"></a>
-       &nbsp;&nbsp;
-      <a href="https://plus.google.com/u/1/b/114093298738418246467/114093298738418246467/about" target="_blank"><img class="fb" src="img/google.png"></a>
-       &nbsp;&nbsp;
-      <a href="http://www.yelp.com/biz/allied-management-group-durham" target="_blank"><img class="fb" src="img/yelp.png"></a>
+        <span class="addresstitle">Allied Management Group, LLC</span>
+        <span class="address"><br>1738 Hillandale Road <br> Durham, NC <br>27705</span><br><br>
+        <a href="https://www.google.com/maps/dir//Allied+Management+Group,+LLC,+1738+Hillandale+Rd,+Durham,+NC+27705/@36.027652,-78.9353919,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89ace15c14a5d51f:0xbaddc556f05e6709!2m2!1d-78.935841!2d36.027414" target="_blank">VIEW MAP</a>
+        <br>
+        <br>
+        <br>
+        <br>
+         <span class="address">Phone: 888-340-4088
+          <br>Fax: 919-287-2228
+          <br>Email: <a href="mailto:info@amgofnc.com">info@amgofnc.com</a>
+        </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.facebook.com/amgofnc" target="_blank"><img class="fb" src="img/facebook.png"></a> &nbsp;&nbsp;
+        <a href="http://www.linkedin.com/company/allied-management-group-llc" target="_blank"><img class="fb" src="img/linkedin.png"></a>
+         &nbsp;&nbsp;
+        <a href="https://plus.google.com/u/1/b/114093298738418246467/114093298738418246467/about" target="_blank"><img class="fb" src="img/google.png"></a>
+         &nbsp;&nbsp;
+        <a href="http://www.yelp.com/biz/allied-management-group-durham" target="_blank"><img class="fb" src="img/yelp.png"></a>
     </div>
+  </div>
   </div>
 </template>
 
