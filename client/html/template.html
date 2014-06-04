@@ -22,10 +22,14 @@
           <li class="divider"></li>
           <li data-magellan-arrival="rentals"><a href="#availablerentals">Available Rentals</a></li>
           <li class="divider"></li>
+          <li data-magellan-arrival="owners"><a href="#owners">Owners</a></li>
+          <li class="divider"></li>
+          <li data-magellan-arrival="tenants"><a href="#tenants">Tenants</a></li>
+          <li class="divider"></li>
           <li data-magellan-arrival="contact"><a href="#contactus">Contact</a></li>
           <li class="divider"></li>
           <li class="has-dropdown">
-            <a href="#">Login</a>
+            <a>Login</a>
               <ul class="dropdown">
                 <li><a href="#" data-reveal-id="firstModal">Owner Login</a></li>
                 <li><a href="#" data-reveal-id="secondModal">Tenant Login</a></li> 
@@ -81,7 +85,7 @@
 <!-- LOGO HEADER -->
 
 <template name="logo">
-<div class="welcome row full-width" style="background-image: url(img/brightleaf.png)">
+<div class="welcome row full-width" style="background-image: url(img/dukest.jpg)">
   <div class="logo row">
 <!-- small size logo -->    
     <strong class="hide-for-medium-up">
@@ -112,6 +116,20 @@
       <li><a href="#"><img class="housepic" src="img/house.jpg"></a></li>
       <li><a href="#"><img class="housepic" src="img/house2.JPG"></a></li>
       <li><a href="#"><img class="housepic" src="img/house3.png"></a></li>  
+    </ul>
+  </div>
+  </div>
+</template>
+
+<!-- HOUSE HIGHLIGHTS TWO -->
+
+<template name="highlight2">
+  <div class="row full-width">
+  <div class="medium-12 columns">
+    <ul class="highlight small-block-grid-3">
+      <li><a href="#"><img class="housepic" src="img/house4.png"></a></li>
+      <li><a href="#"><img class="housepic" src="img/house5.png"></a></li>
+      <li><a href="#"><img class="housepic" src="img/house6.png"></a></li>  
     </ul>
   </div>
   </div>
@@ -159,7 +177,7 @@
 <!-- MGMT SERVICES -->
 
 <template name="managementservices">
-  <div data-magellan-destination="management" id="managementservices" class="row mgmtbackground" style="background-image: url(img/brightleaf.png)">
+  <div data-magellan-destination="management" id="managementservices" class="row mgmtbackground" style="background-image: url(img/dukest.jpg)">
     <div class=" large-12 column">
       <p class="mgmttitle">Management Services</p>
       <p class="mgmtcontent">Allied Management Group is a new-breed of property management companies. We provide a wholly integrated package that yields personalized solutions for each of our clients’ diverse property management needs. Client goals, market conditions, and property needs are our driving forces. Allied Management’s superior service relies on our robust marketing, responsive oversight, and streamlined technology.
@@ -276,7 +294,7 @@
 
 <template name="ownersandtenants">
   <!-- OWNER -->
-  <div class="row ownerbackground" id="ownersandtenants">
+  <div class="row ownerbackground" data-magellan-destination="owners" id="owners">
     <div class="large-6 column">
       <!-- prospective owner -->
       <p class="ownertitle"><br>I'm an owner.</p>
@@ -294,7 +312,7 @@
 
   <!-- TENANT -->
   <strong class="hide-for-small">
-    <div class="row ownerbackground">
+    <div class="row ownerbackground" data-magellan-destination="tenants" id="tenants">
       <div class="large-6 column inline center-button">
         <a href="available.html" class="mainbutton button expand">Available Rentals</a>
     
