@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "zurb-foundation": {},
-      "foundation-icons-general": {}
+      "foundation-icons-general": {},
+      "moment": {}
     },
     "packages": {
       "zurb-foundation": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/IainShigeoka/meteor-foundation-icons-general.git",
         "tag": "v1.0.1",
         "commit": "0d16dc77ffb76180d63dcbc58716bd1dbf7d66d5"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       }
     }
   }
