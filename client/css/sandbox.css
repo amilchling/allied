@@ -346,5 +346,12 @@ a:hover {
 	background: #226ad5;
 }
 
+.accordtext span{
+	float: right;
+}
+
+.accordion div{
+	background: white;
+}
 
 

@@ -187,17 +187,17 @@
     
 <!-- accordion -->
     <div class="mgmtaccordion">
-      <dl class="accordion accordtext" data-accordion>
+      <dl class="accordion accordtext">
         <dd>
           <!-- PROPERTY EVALUATION -->
-          <a href="#panel1">PROPERTY EVALUATION</a>
+          <a href="#panel1">PROPERTY EVALUATION<span class="general foundicon-plus"></span></a>
           <div id="panel1" class="content">
             • On-site visit to determine best rental rate<br>• Thorough property condition assessment<br>• Professional improvement suggestions to maximize residence<br>• Photo documentation for marketing and records<br>
           </div>
         </dd>
         <dd>
         <!-- MARKETING -->
-         <a href="#panel2">MARKETING</a>
+         <a href="#panel2">MARKETING<span class="general foundicon-plus"></span></a>
           <div id="panel2" class="content">
             We market your property for you. We know that tenants do most of their searching online. For this reason, we have the most thorough online marketing plan in the area. We also have national and local contacts that serve as indispensible references in directing business our way.
            <br>
@@ -212,7 +212,7 @@
         </dd>
         <dd>
           <!-- TENANT PROCUREMENT -->
-          <a href="#panel3">TENANT PROCUREMENT</a>
+          <a href="#panel3">TENANT PROCUREMENT<span class="general foundicon-plus"></span></a>
           <div id="panel3" class="content">
            Through years of experience, we have developed a process for attracting, screening, and confidently choosing ideal tenants for our clients. We implement the following:
             <br>
@@ -227,7 +227,7 @@
         </dd>
        <dd>
           <!-- FINANCIAL OVERSIGHT -->
-          <a href="#panel4">FINANCIAL OVERSIGHT</a>
+          <a href="#panel4">FINANCIAL OVERSIGHT<span class="general foundicon-plus"></span></a>
           <div id="panel4" class="content">
            From monthly rent collection, to completing tax records- we take care of all of the money management and accounting that renting your property requires.
             <br>
@@ -246,7 +246,7 @@
         </dd>
         <dd>
           <!-- MAINTENANCE AND REPAIRS -->
-          <a href="#panel5">MAINTENANCE AND REPAIRS</a>
+          <a href="#panel5">MAINTENANCE AND REPAIRS<span class="general foundicon-plus"></span></a>
           <div id="panel5" class="content">
             We get to know your property through inspections and monitor its progress regularly. Whenever the need for maintenance and repairs may arise, we have the experience and network of contractors to affordably and effectively resolve any issue. Our goal is to provide the best residence for all tenants.
             <br>
@@ -256,7 +256,7 @@
         </dd>
         <dd>
           <!-- ADDITIONAL SERVICES -->
-          <a href="#panel6">ADDITIONAL SERVICES</a>
+          <a href="#panel6">ADDITIONAL SERVICES<span class="general foundicon-plus"></span></a>
           <div id="panel6" class="content">
            • Investment consulting<br>• Purchase and sale evaluation by our Licensed Residential Appraiser<br>• Should you wish to sell, our Licensed Broker will help you personally<br>• We can also refer clients to a competent REALTOR® with experience in your neighborhood<br>• We additionally offer buyer agency representation
           </div>
@@ -373,16 +373,22 @@
       <div class="large-8 columns">
         <section class="contact section">
           <div class="contact content" data-slug="panel1">
-            <form action="MAILTO:info@amgofnc.com" method="post" enctype="text/plain">
+            <form action="MAILTO:info@amgofnc.com" method="post" enctype="text/plain" data-abide>
               <div class="row collapse">
                 <!-- name -->
                 <div class="large-12 columns">
-                  <input type="text" id="yourName" placeholder="Jane Smith">
+                  <div class="name-field">
+                    <input id="yourName" type="text" required pattern="[a-zA-z ]+" placeholder="Jane Smith">
+                    <small class="error">Please enter a name (no numbers or symbols)</small>
+                  </div>
                 </div>
               <div class="row collapse">
                 <!-- email -->
                 <div class="large-12 columns">
-                  <input type="text" id="yourEmail" placeholder="jsmith@gmail.com">
+                  <div class="email-field">
+                    <input id="yourEmail" type="email" required placeholder="jsmith@gmail.com">
+                    <small class="error"> Please enter a valid email address </small>
+                  </div>
                 </div>
               </div>
               <!-- message -->
